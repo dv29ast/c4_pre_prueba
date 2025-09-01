@@ -1,21 +1,21 @@
 const trabajitos = [
     {
-        photo: "https://github.com/dv29ast/c4_pre_prueba/img1",
+        photo: "img/img1.png",
         title: "Conexion",
         description: "Trabajo de proyecto I, no recuerdo el nombre del profesor..."
     },
         
-    {    photo: "https://github.com/dv29ast/c4_pre_prueba/img2",
+    {    photo: "img/img2.png",
         title: "Reflejo",
         description: "Trabajo de proyecto I, no recuerdo el nombre del profesor..."
     },
         
-    {    photo: "https://github.com/dv29ast/c4_pre_prueba/img3",
+    {    photo: "img/img3.png",
         title: "Metamorfosis",
         description: "Trabajo de proyecto I, no recuerdo el nombre del profesor..."
     },
         
-    {    photo: "https://github.com/dv29ast/c4_pre_prueba/img4",
+    {    photo: "img/img4.png",
         title: "Vinilo El Quijote",
         description: "Trabajo de proyecto I, no recuerdo el nombre del profesor..."
     }];
@@ -263,6 +263,9 @@ function setup() {
      trabajitos.forEach((x)=>{
         document.querySelector("#portafolio").innerHTML += `<div><img src="${x.photo}"><p>${x.title}</p></div>`;
     });
+    
+    document.querySelector("#autoria").innerHTML = yo.nombre;
+    
     //Ahora vuelvo al p5.js
     noStroke();
 }
