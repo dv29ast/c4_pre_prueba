@@ -259,21 +259,21 @@ function setup() {
     otrxs.forEach((x)=>{
         document.querySelector("#otredad").innerHTML += `<div><a href="${x.cuenta}"><img src="${x.foto}" title="${x.esperado}"></a></div>`;
     });
-    
+    //copy-paste, y arreglín
      trabajitos.forEach((x)=>{
         document.querySelector("#portafolio").innerHTML += `<div><img src="${x.photo}"><p>${x.title}</p></div>`;
     });
     
     document.querySelector("#autoria").innerHTML = yo.nombre;
     
-    
+    //Ahora vuelvo al p5.js
     noStroke();
 }
 
 function draw() {
     background("white");
     orbitControl();
-    pointLight(255, 255, 255, valor / 3, valor / 2, 50);
+    pointLight(255, 255, 255, valor / 3, valor / 2, 5000);
     specularMaterial(255);
     shininess(50);
     metalness(1);
@@ -281,12 +281,23 @@ function draw() {
     // Add shapes.
     push();
     fill("rgb(212,0,60)");
-    translate(0, -valor / 4, -valor / 7);
-    sphere(valor / 4);
+    translate(50, 0, 150);
+    torus(30);
+    pop();
+ push();
+    fill("rgb(212,0,60)");
+    translate(-50, 0, 150);
+    torus(30);
     pop();
     push();
     fill("rgb(43,255,195)");
-    sphere(valor / 5);
+    sphere(valor / 3);
+    pop();
+    push();
+    fill("rgb(212,0,60)");
+    translate(0, 0, 150);
+    rotate(90);
+    cylinder(30,50);
     pop();
 }
 
