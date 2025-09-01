@@ -1,21 +1,21 @@
 const trabajitos = [
     {
-        photo: "https://picsum.photos/id/50/400/300",
+        photo: "https://github.com/dv29ast/c4_pre_prueba/conexion",
         title: "Conexion",
         description: "Trabajo de proyecto I, no recuerdo el nombre del profesor..."
     },
         
-    {    photo: "https://picsum.photos/id/54/400/300",
+    {    photo: "https://github.com/dv29ast/c4_pre_prueba/baldoza",
         title: "Reflejo",
         description: "Trabajo de proyecto I, no recuerdo el nombre del profesor..."
     },
         
-    {    photo: "https://picsum.photos/id/81/400/300",
+    {    photo: "https://github.com/dv29ast/c4_pre_prueba/metamorfosis",
         title: "Metamorfosis",
         description: "Trabajo de proyecto I, no recuerdo el nombre del profesor..."
     },
         
-    {    photo: "https://picsum.photos/id/88/400/300",
+    {    photo: "https://github.com/dv29ast/c4_pre_prueba/quijote",
         title: "Vinilo El Quijote",
         description: "Trabajo de proyecto I, no recuerdo el nombre del profesor..."
     }];
