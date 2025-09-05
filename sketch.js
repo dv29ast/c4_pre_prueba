@@ -279,14 +279,14 @@ function draw() {
     metalness(1);
 
     // Add shapes.
-    push();
+     push();
     fill("rgb(212,0,60)");
-    translate(50, 0, 150);
+    translate(50, 0, 110);
     torus(30);
     pop();
  push();
     fill("rgb(212,0,60)");
-    translate(-50, 0, 150);
+    translate(-50, 0, 110);
     torus(30);
     pop();
     push();
@@ -295,9 +295,20 @@ function draw() {
     pop();
     push();
     fill("rgb(212,0,60)");
-    translate(0, 0, 150);
+    translate(0, 0, 110);
+    angleMode(DEGREES);
     rotate(90);
-    cylinder(30,50);
+    cylinder(9,47);
+    pop();
+    push();
+    fill("rgb(212,0,60)");
+    translate(0, -60, 0);
+    cylinder(130,15);
+    pop();
+    push();
+    fill("rgb(212,0,60)");
+    translate(0, -90, 0);
+    cylinder(90,100);
     pop();
 }
 
